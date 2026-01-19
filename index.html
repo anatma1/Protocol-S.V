@@ -9,31 +9,29 @@
             --medical-blue: #0d47a1;
             --light-summary: #e1f5fe;
             --light-blue: #e3f2fd;
-            --header-blue: #1976d2;
             --header-green: #388e3c;
-            --danger-red: #d32f2f;
             --info-blue: #e1f5fe;
             --neon-yellow: #ffff00;
         }
-        body { font-family: system-ui, -apple-system, sans-serif; background: #f5f5f5; margin: 0; padding: 10px; color: #263238; }
+        body { font-family: system-ui, -apple-system, sans-serif; background: #f5f5f5; margin: 0; padding: 8px; color: #263238; }
         .container { max-width: 450px; margin: auto; background: white; border-radius: 16px; padding: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 1px solid #ddd; }
-        .header-box { text-align: center; margin-bottom: 15px; border-bottom: 2px solid var(--light-blue); padding-bottom: 10px; }
-        .header-box h2 { margin:0; color: var(--medical-blue); font-size: 1.4rem; }
-        .header-box p { margin: 5px 0 0 0; font-size: 0.9rem; color: #546e7a; font-weight: bold; }
+        
+        .header-box { text-align: center; margin-bottom: 12px; border-bottom: 2px solid var(--light-blue); padding-bottom: 8px; }
+        .header-box h2 { margin:0; color: var(--medical-blue); font-size: 1.3rem; }
+        .header-box p { margin: 4px 0 0 0; font-size: 0.85rem; color: #546e7a; font-weight: bold; }
         
         .checklist-box { background: #f1f8e9; border: 1px solid #c5e1a5; padding: 12px; border-radius: 12px; margin-bottom: 15px; }
-        .checklist-box h3 { margin: 0 0 8px 0; font-size: 0.95rem; color: #2e7d32; border-bottom: 1px solid #c5e1a5; }
-        .check-item { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; font-size: 0.82rem; font-weight: 600; cursor: pointer; line-height: 1.3; }
-        .sub-info { font-weight: normal; font-size: 0.75rem; color: #555; display: block; margin-right: 22px; }
+        .checklist-box h3 { margin: 0 0 8px 0; font-size: 0.95rem; color: #2e7d32; border-bottom: 1px solid #c5e1a5; padding-bottom: 4px; }
+        .check-item { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 8px; font-size: 0.82rem; font-weight: 600; cursor: pointer; line-height: 1.3; }
+        .sub-info { font-weight: normal; font-size: 0.75rem; color: #555; display: block; }
         .alert-text { color: #d32f2f; font-weight: bold; }
         
-        .input-group { margin-bottom: 15px; display: grid; grid-template-columns: 1fr; gap: 10px; }
         input[type="number"], select { width: 100%; padding: 10px; border: 2px solid #bbdefb; border-radius: 10px; font-size: 1rem; text-align: center; box-sizing: border-box; }
         
-        .summary-card { background: var(--light-summary); border: 2px solid #81d4fa; padding: 12px; border-radius: 12px; display: flex; justify-content: space-around; text-align: center; margin-bottom: 10px; }
+        .summary-card { background: var(--light-summary); border: 1px solid #81d4fa; padding: 12px; border-radius: 12px; display: flex; justify-content: space-around; text-align: center; margin-bottom: 10px; }
         .summary-item strong { font-size: 1.1rem; color: var(--medical-blue); display: block; }
         
-        .gi-warning { background: var(--neon-yellow); color: black; padding: 10px; border-radius: 10px; font-weight: bold; margin-bottom: 15px; border: 2px solid #ffd600; font-size: 0.85rem; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .gi-warning { background: var(--neon-yellow); color: black; padding: 10px; border-radius: 10px; font-weight: bold; margin-bottom: 15px; border: 2px solid #ffd600; font-size: 0.82rem; text-align: center; line-height: 1.4; }
 
         .section-header { padding: 8px 12px; color: white; border-radius: 8px 8px 0 0; font-weight: bold; margin-top: 15px; font-size: 0.9rem; }
         .green-header { background: var(--header-green); }
@@ -42,12 +40,13 @@
         
         .val-col { font-weight: 800; background: #fff9c4; width: 35%; }
         .rate-subtext { display: block; font-size: 0.75rem; color: #d32f2f; font-weight: bold; margin-top: 2px; }
-        .instr-row { background: var(--info-blue) !important; color: #0277bd; font-weight: bold; border-top: 1px solid #fff; }
-        .allergy-alert { background: #ffebee !important; color: #c62828 !important; font-size: 0.8rem !important; font-weight: bold; }
+        .instr-row { background: var(--info-blue) !important; color: #0277bd; font-weight: bold; border-top: 1px solid #fff; font-size: 0.8rem; }
         
-        .final-notes-box { background: #fafafa; border: 1px solid #eee; padding: 10px; border-radius: 10px; margin-top: 10px; font-size: 0.85rem; line-height: 1.4; color: #455a64; text-align: right; }
+        .final-notes-box { background: #fafafa; border: 1px solid #eee; padding: 10px; border-radius: 10px; margin-top: 10px; font-size: 0.78rem; color: #455a64; text-align: center; line-height: 1.6; }
+        .note-item { display: inline-block; }
+        .note-sep { margin: 0 4px; color: #ccc; }
+
         .warning-box { background: #fff3e0; color: #e65100; border: 1px solid #ffe0b2; padding: 10px; border-radius: 10px; text-align: center; font-size: 0.85rem; font-weight: bold; margin-top: 10px; }
-        
         .wa-btn { background: #25D366; color: white; border: none; padding: 14px; width: 100%; border-radius: 12px; font-weight: bold; cursor: pointer; font-size: 1.1rem; margin-top: 15px; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3); }
         footer { text-align: center; font-size: 0.72rem; color: #90a4ae; margin-top: 20px; border-top: 1px solid #eee; padding-top: 10px; }
     </style>
@@ -80,7 +79,7 @@
         <label class="check-item"><input type="checkbox" id="check3" onchange="toggleForm()"> חלב אם / נוטרילון פפטי-ג'וניור 13.5% / לברר</label>
         
         <div class="check-item" style="flex-wrap: wrap; margin-top: 10px;">
-            <span style="font-size: 0.8rem; color: #666;">סוג ניתוח (רשות):</span>
+            <span style="font-size: 0.8rem; color: #666;">סוג ניתוח:</span>
             <select id="surgerySelect" style="width: auto; padding: 2px; font-size: 0.8rem; height: 25px; border: 1px solid #ccc; margin-right: 5px;" onchange="calculate()">
                 <option value="לא צוין" selected>בחר ניתוח...</option>
                 <option value="CoA+VSD">CoA+VSD</option>
@@ -92,18 +91,12 @@
     </div>
 
     <div id="mainForm" style="opacity: 0.4; pointer-events: none;">
-        <div class="input-group">
-            <div>
-                <label style="font-weight:bold; color:var(--medical-blue); font-size: 0.85rem;">משקל לחישוב (ק"ג)</label>
-                <input type="number" id="weight" step="0.1" placeholder="0.0" oninput="calculate()">
-            </div>
-            <div>
-                <label style="font-size: 0.85rem; font-weight: bold;">מיקום הזנה</label>
-                <select id="feedRoute" onchange="calculate()">
-                    <option value="regular">הזנה רגילה (לקיבה)</option>
-                    <option value="jejunal">הזנה ג'ג'ונאלית (פוסט-פילורי)</option>
-                </select>
-            </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 15px;">
+            <input type="number" id="weight" step="0.1" placeholder="משקל (ק״ג)" oninput="calculate()">
+            <select id="feedRoute" onchange="calculate()">
+                <option value="regular">הזנה לקיבה</option>
+                <option value="jejunal">ג'ג'ונאלית</option>
+            </select>
         </div>
 
         <div id="results" style="display:none;">
@@ -113,7 +106,7 @@
             </div>
 
             <div class="gi-warning">
-                ⚠️ מעקב אחר סימנים מדאיגים: עליית לקטט / היקף בטן / בעיות GI - לעצור הזנה ולהתייעץ עם רופא.
+                ⚠️ מעקב: עליית לקטט / היקף בטן / בעיות GI - לעצור הזנה 🛑 ולהתייעץ עם רופא.
             </div>
 
             <div class="section-header green-header">הזנה רציפה - שלבי התקדמות</div>
@@ -125,10 +118,9 @@
             </div>
 
             <div class="final-notes-box">
-                <strong>הנחיות נוספות:</strong><br>
-                • מעקב משקל<br>
-                • המשך העשרה בהמשך להערכת אינטייק ומשקל - ע"י דיאטנית<br>
-                • נסיון PO עם פורמולה רגילה - לאחר קבלת אישור רפואי
+                <span class="note-item">• מעקב משקל</span> <span class="note-sep">|</span>
+                <span class="note-item">• העשרה נוספת לאחר הערכת דיאטנית</span> <span class="note-sep">|</span><br>
+                <span class="note-item">• נסיון PO עם פורמולה רגילה - באישור רופא</span>
             </div>
 
             <div class="warning-box">
@@ -138,32 +130,23 @@
             <button class="wa-btn" onclick="sendWA()">שלח הוראת הזנה ❤️</button>
         </div>
     </div>
-
     <footer>כל הזכויות שמורות לענת מסלנסקי - דיאטנית קלינית</footer>
 </div>
 
 <script>
     let protocolSteps = [];
-
     function toggleForm() {
         const checks = ['check1', 'check2', 'check_ph', 'check_lac', 'check_ino', 'check3'];
         const allChecked = checks.every(id => document.getElementById(id).checked);
         const form = document.getElementById('mainForm');
-        
-        if (allChecked) {
-            form.style.opacity = "1";
-            form.style.pointerEvents = "all";
-        } else {
-            form.style.opacity = "0.4";
-            form.style.pointerEvents = "none";
-        }
+        form.style.opacity = allChecked ? "1" : "0.4";
+        form.style.pointerEvents = allChecked ? "all" : "none";
     }
 
     function calculate() {
         const w = parseFloat(document.getElementById('weight').value);
         const route = document.getElementById('feedRoute').value;
         const res = document.getElementById('results');
-        
         if (!w || w <= 0) { res.style.display = 'none'; return; }
         res.style.display = 'block';
 
@@ -189,16 +172,14 @@
         contRows += `
             <tr style="background:#e8f5e9"><td><b>קצב יעד (נפח מלא)</b></td><td class="val-col">${maxRate} מ\"ל/שעה</td></tr>
             <tr class="instr-row"><td colspan="2">העשרת חלב אם בסימילאק נאושור 1.5%</td></tr>
-            <tr class="instr-row"><td colspan="2">ריכוז נוטרילון פפטי-ג'וניור ל-15%</td></tr>
-            <tr class="allergy-alert"><td colspan="2">⚠️ בחשד לאלרגיה לחלב: להיוועץ עם דיאטנית</td></tr>
-        `;
+            <tr class="instr-row"><td colspan="2">ריכוז נוטרילון פפטי-ג'וניור ל-15%</td></tr>`;
         document.getElementById('contTable').innerHTML = contRows;
 
         if (route === 'jejunal') {
             document.getElementById('bolusSection').style.display = 'none';
         } else {
             document.getElementById('bolusSection').style.display = 'block';
-            const rateDay1 = Math.round(bolusVol / 2); 
+            const rateDay1 = Math.round(bolusVol / 2);
             document.getElementById('bolusTable').innerHTML = `
                 <tr><td>יממה 1 (בשעתיים)</td><td class="val-col">${bolusVol} מ"ל × 8 <span class="rate-subtext">קצב הזנה: ${rateDay1} מ"ל/שעה</span></td></tr>
                 <tr><td>יממה 2 (בשעה)</td><td class="val-col">${bolusVol} מ"ל × 8 <span class="rate-subtext">קצב הזנה: ${bolusVol} מ"ל/שעה</span></td></tr>`;
@@ -208,33 +189,8 @@
     function sendWA() {
         const w = document.getElementById('weight').value;
         const surgery = document.getElementById('surgerySelect').value;
-        const route = document.getElementById('feedRoute').value;
-        const routeText = route === 'regular' ? "רגילה (לקיבה)" : "ג'ג'ונאלית (פוסט-פילורי)";
-        const maxRateValue = document.getElementById('dispMaxRate').innerText;
-        const bolusVol = Math.round((parseFloat(w) * 150 / 8) / 5) * 5;
-
-        let msg = `*פרוטוקול הזנה S.V - שניידר* 🩺\n`;
-        msg += `--------------------------\n`;
-        msg += `• משקל: ${w} ק"ג | ניתוח: ${surgery}\n`;
-        msg += `• מיקום הזנה: ${routeText}\n\n`;
-        
-        msg += `*שלבי הזנה רציפה:*\n`;
-        msg += protocolSteps.join('\n') + '\n';
-        msg += `• *בנפח מלא:* ${maxRateValue}\n\n`;
-
-        if (route !== 'jejunal') {
-            const r1 = Math.round(bolusVol / 2);
-            msg += `*מעבר לבולוסים:*\n`;
-            msg += `• יממה 1: ${bolusVol} מ"ל × 8 (בשעתיים, קצב הזנה ${r1} מ"ל/שעה)\n`;
-            msg += `• יממה 2: ${bolusVol} מ"ל × 8 (בשעה, קצב הזנה ${bolusVol} מ"ל/שעה)\n\n`;
-        }
-
-        msg += `*הערות:* \n`;
-        msg += `• מעקב משקל\n`;
-        msg += `• המשך העשרה ע"י דיאטנית\n`;
-        msg += `• נסיון PO באישור רפואי\n\n`;
-        msg += `⚠️ *אזהרה:* עליית לקטט/היקף בטן/בעיות GI - לעצור הזנה ולהתייעץ עם רופא!\n\n_ענת מסלנסקי, דיאטנית קלינית_`;
-
+        const routeText = document.getElementById('feedRoute').value === 'regular' ? "קיבה" : "ג'ג'ונאלית";
+        let msg = `*פרוטוקול הזנה S.V - שניידר*\n• משקל: ${w} ק"ג | ${surgery} | ${routeText}\n\n*שלבי התקדמות:*\n${protocolSteps.join('\n')}\n• *יעד סופי:* ${document.getElementById('dispMaxRate').innerText}\n\n⚠️ לעצור הזנה 🛑 במקרה של חשד GI!`;
         window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
     }
 </script>
