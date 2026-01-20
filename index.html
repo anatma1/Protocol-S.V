@@ -82,7 +82,7 @@
             <label class="check-item">
                 <input type="checkbox" id="check_ino" onchange="toggleForm()"> 
                 <div>אינוטרופים (מק"ג/ק"ג/דקה):
-                    <span class="sub-info">Adr < 0.05 | Dop < 5 | Mil < 0.5</span>
+                    <span class="sub-info">NOR < 0.05 | Adr < 0.05 | Dop < 5</span>
                 </div>
             </label>
         </div>
@@ -209,7 +209,7 @@
         const w = document.getElementById('weight').value;
         const surgery = document.getElementById('surgerySelect').value;
         const routeText = document.getElementById('feedRoute').value === 'regular' ? "קיבה" : "ג'ג'ונאלית";
-        let msg = `*פרוטוקול הזנה S.V*\n• משקל: ${w} ק"ג | ${surgery} | ${routeText}\n\n*שלבים:*\n${protocolSteps.join('\n')}\n• *קצב מקסימלי:* ${document.getElementById('dispMaxRate').innerText}\n\n⚠️ סימנים מדאיגים: לקטט, בטן תפוחה. לעצור הזנה ולהתייעץ עם הצוות הרפואי!`;
+        let msg = `*פרוטוקול הזנה S.V*\n• משקל: ${w} ק"ג | ${surgery} | ${routeText}\n\n*שלבים:*\n${protocolSteps.join('\n')}\n• *קצב מקסימלי:* ${document.getElementById('dispMaxRate').innerText}\n\n⚠️ סימנים מדאיגים: לעצור הזנה ולהתייעץ עם הצוות הרפואי!`;
         window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
     }
 </script>
